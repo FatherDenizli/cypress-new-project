@@ -18,8 +18,7 @@ describe('Validate Check boxes and Radio Button', () => {
         //cy.get("input[type='checkbox']").check('Checkbox 1');
         cy.get('#box1').check();
         cy.get('#box2').check();
-
-              
+             
         
     });
 
@@ -31,7 +30,9 @@ describe('Validate Check boxes and Radio Button', () => {
          cy.get('#yellow').check();
        cy.get('#yellow').check();
               
-        
+        //https://form.jotform.com/230213815390549
+       
+      // https://www.chaijs.com/  assertion library
     });
 
 
