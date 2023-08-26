@@ -6,5 +6,15 @@ module.exports = {
     testIsolation: false,
     viewportWidth: 1280,
     viewportHeight: 720
+    
   },
+ 
+ 
 };
+
+{
+  component: {
+    specPattern: 'src/**/*.{js,jsx,ts,tsx}'
+  }
+}
+ 
