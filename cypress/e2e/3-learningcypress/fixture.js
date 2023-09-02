@@ -16,7 +16,7 @@ describe('This is fixture tutorials ', function() {
     })
 
 
-    it('Learn data-driven testing or parameterizing a test', function()  {
+    it.only('Learn data-driven testing or parameterizing a test', function()  {
     
         cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
 

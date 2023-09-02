@@ -24,3 +24,27 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 require('@4tw/cypress-drag-drop')
+import 'cypress-file-upload';
+
+ 
+require('cypress-downloadfile/lib/downloadFileCommand')
+
+Cypress.Commands.add('Login', (username,password) => {
+      
+    cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type(username);
+
+       cy.get(':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input').type(password);
+                
+    cy.get('.oxd-button').click();
+    
+    
+
+    cy.url().should('include', '/web/index.php/auth/logout');
+    cy.title().should('eq', 'OrangeHRM Live | Login');
+    
+     
+
+})
+
+ 
+

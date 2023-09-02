@@ -19,6 +19,8 @@ import './commands'
  
 require('cypress-xpath');
 
+
+require('cypress-downloadfile/lib/downloadFileCommand')
 //require('@4tw/cypress-drag-drop')
 
 // Alternatively you can use CommonJS syntax:
